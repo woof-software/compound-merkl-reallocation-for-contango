@@ -1,0 +1,29 @@
+{
+  "name": "compound-merkl-reallocation-for-contango",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "proxies": "tsx src/proxy-owners.ts",
+    "merkl": "tsx src/merkl-cross-ref.ts",
+    "typecheck": "tsc -p . --noEmit",
+    "all": "tsx src/run-all.ts all",
+    "proxies:all": "tsx src/run-all.ts proxies",
+    "merkl:all": "tsx src/run-all.ts merkl"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "viem": "^2.56.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
